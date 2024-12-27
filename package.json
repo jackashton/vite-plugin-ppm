@@ -8,7 +8,7 @@
   },
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && cp src/ppm.d.ts dist",
     "test": "vitest",
     "lint": "eslint 'src'"
   },

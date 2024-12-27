@@ -8,5 +8,5 @@ export default defineConfig({
   clean: true,
   outDir: 'dist',
   target: 'esnext',
-  external: ['vite'],
+  external: ['vite', 'ppm-parser'],
 });
