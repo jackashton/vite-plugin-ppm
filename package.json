@@ -1,13 +1,16 @@
 {
   "name": "vite-plugin-ppm",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
-  "files": ["dist", "client.d.ts"],
+  "files": [
+    "dist",
+    "client.d.ts"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest",
