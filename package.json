@@ -1,12 +1,18 @@
 {
   "name": "vite-plugin-ppm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "main": "dist/index.js",
-  "exports": {
-    ".": "./dist/index.js"
-  },
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./client.d.ts"
+    }
+  },
   "files": [
     "dist",
     "client.d.ts"
@@ -39,11 +45,11 @@
     "prettier": "^3.4.2",
     "tsup": "^8.3.5",
     "typescript": "~5.4.5",
-    "vite": "^5.0.0",
-    "vitest": "^2.1.8"
+    "vite": "6.2.6",
+    "vitest": "3.0.5"
   },
   "peerDependencies": {
-    "vite": "*",
+    "vite": "6.2.6",
     "ppm-parser": "^1.0.0"
   }
 }
